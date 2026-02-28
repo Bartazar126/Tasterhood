@@ -1,6 +1,7 @@
 "use client";
 
 import clsx from "clsx";
+import React from "react";
 
 export type IconName = "pizza" | "burger" | "gyros" | "phone" | "bike" | "check" | "arrow" | "menu" | "close" | "pancake" | "coffee";
 
@@ -12,7 +13,7 @@ interface HandIconProps {
 
 export default function HandIcon({ name, className, size = 32 }: HandIconProps) {
   // SVG Paths with "hand-drawn" jitter
-  const paths: Record<IconName, JSX.Element> = {
+  const paths: Record<IconName, React.JSX.Element> = {
     pizza: (
       <>
         <path d="M16 4C10 4 6 8 6 12L16 28L26 12C26 8 22 4 16 4Z" strokeLinecap="round" strokeLinejoin="round" />
